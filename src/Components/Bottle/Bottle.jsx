@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import './Bottle.css'
 const Bottle = ({bottle, handleAddToCart}) => {
     // console.log(bottle) ekhane amay duibar bottle type korte hoy keno
@@ -11,5 +12,10 @@ const Bottle = ({bottle, handleAddToCart}) => {
         </div>
     );
 };
+
+Bottle.propTypes ={
+    Bottle: PropTypes.object.isRequired,
+    handleAddToCart: PropTypes.func.isRequired
+}
 
 export default Bottle;
